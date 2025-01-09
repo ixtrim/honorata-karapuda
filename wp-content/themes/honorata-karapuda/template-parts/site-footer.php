@@ -1,9 +1,7 @@
-<div class="go-bottom"></div>
-
 <footer class="section page-footer">
   <div class="container">
 
-    Copyrights
+   <p>&copy; <?php echo date('Y'); ?> Honorata Karapuda. All Rights Reserved.</p>
 
   </div>
 </footer>

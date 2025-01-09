@@ -1,153 +1,60 @@
 .page-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  width: 100%;
-  padding: 0;
-  transition: top 0.3s ease, opacity 0.3s ease;
-
   .container {
-    width: calc(100% - 144px);
-    max-width: 1296px;
-    margin: 0 auto;
-    padding: 32px 0 33px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: padding 0.3s ease;
-
-    @media (max-width: 767px) {
-      width: calc(100% - 64px);
-      padding: 22px 0;
-    }
   }
 
   &__brand {
     a {
       img {
-        width: 233px;
-        height: auto;
+        width: auto;
+        height: 50px;
         vertical-align: middle;
-
-        @media (max-width: 767px) {
-          width: 151px;
-          filter: invert(1) brightness(2);
-        }
       }
     }
   }
 
-  &__cta {
-    @media (max-width: 767px) {
-      margin: 0 20px 0 auto;
-    }
+  &__sm {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      gap: 10px;
 
-    a {
-      position: relative;
-      font-size: 17px;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-decoration: none;
-      line-height: 20px;
-      color: get-color('c-black', 'v-100');
-
-      &::after {
-        content: '';
-        position: relative;
-        top: 6px;
-        width: 24px;
-        height: 20px;
-        margin-left: 16px;
-        display: inline-block;
-        background: url('../images/icons/envelope_dark.svg') center center no-repeat;
-
-        @media (max-width: 767px) {
-          width: 29px;
-          height: 22px;
-          background: url('../images/icons/envelope_white.svg') center center no-repeat;
-        }
-      }
-
-      span {
-        @media (max-width: 767px) {
-          display: none;
-        }
-      }
-
-      &:hover {
-        color: get-color('c-blue', 'v-100');
-
-        &::after {
-          background: url('../images/icons/envelope_blue.svg') center center no-repeat;
-        }
-      }
-    }
-  }
-
-  &__burger {
-    position: relative;
-    top: 3px;
-    width: 22px;
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
-    cursor: pointer;
-
-    span {
-      width: 3px;
-      height: 25px;
-      display: inline-block;
-      position: relative;
-      background: get-color('c-black', 'v-100');
-      transform: rotate(20deg);
-      transition: transform 0.3s ease-in-out;
-
-      @media (max-width: 768px) {
-        background: get-color('c-white', 'v-100');
-      }
-    }
-
-    &:hover {
-      span {
-        transform: rotate(0deg);
-        background: get-color('c-blue', 'v-100');
-      }
-    }
-  }
-
-  &.afloat {
-    position: fixed;
-    background: get-color('c-white', 'v-100');
-
-    .container {
-      padding: 23px 0;
-
-      img {
-        filter: unset;
-      }
-
-      a {
-        &::after {
-          background: url('../images/icons/envelope_dark.svg') center center no-repeat;
+      li {
+        a {
+          text-indent: -99999px;
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
         }
 
-        &:hover {
-          &::after {
-            background: url('../images/icons/envelope_blue.svg') center center no-repeat;
+        &.instagram {
+          a {
+            background-image: url('../images/icons/sm-instagram_blue.svg');
+
+            &:hover {
+              background-image: url('../images/icons/sm-instagram_white.svg');
+            }
           }
         }
-      }
 
-      div {
-        & > span {
-          background: get-color('c-black', 'v-100');
-        }
+        &.email {
+          a {
+            background-image: url('../images/icons/envelope_blue.svg');
 
-        &:hover {
-          span {
-            background: get-color('c-blue', 'v-100');
+            &:hover {
+              background-image: url('../images/icons/envelope_white.svg');
+            }
           }
         }
       }

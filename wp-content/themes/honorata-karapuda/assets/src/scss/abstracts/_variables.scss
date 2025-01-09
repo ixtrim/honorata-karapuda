@@ -1,42 +1,15 @@
-@font-face {
-  font-family: 'Neutra Display';
-  src: url('../fonts/NeutraDisp-Titling.woff2') format('woff2'),
-       url('../fonts/NeutraDisp-Titling.woff') format('woff'),
-       url('../fonts/NeutraDisp-Titling.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Neutra Text';
-  src: url('../fonts/neutra-text.woff2') format('woff2'),
-       url('../fonts/neutra-text.woff') format('woff'),
-       url('../fonts/neutra-text.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 // Fonts
-$font-main: 'Neutra Text';
-$font-heading: 'Neutra Display';
+$font-main: "Poppins", serif;
 
 $colors: (
   c-black: (
-    v-200: #000000,
-    v-100: #322625,
+    v-200: #111111,
+    v-100: #000000,
   ),
   c-blue: (
-    v-200: #C0E3E5,
-    v-100: #C8E6EB,
-  ),
-  c-yellow: (
-    v-100: #FDC936,
-  ),
-  c-gray: (
-    v-200: #F3F3F3,
-    v-100: #EFEFEF,
+    v-100: #1820dd,
   ),
   c-white: (
     v-100: #FFFFFF,
@@ -55,35 +28,3 @@ $spaces: (
   xxxx: 100px,
   xxxxx: 120px
 );
-
-$font-sizes: (
-  f-xs: 12px,
-  f-sm: 14px,
-  f-md: 16px,
-  f-lg: 18px,
-  f-xl: 24px,
-  f-xxl: 32px,
-);
-
-:root {
-  // Convert SCSS map to CSS variables
-  @each $color-name, $shades in $colors {
-    @each $shade-name, $value in $shades {
-      --color-#{$color-name}-#{$shade-name}: #{$value};
-    }
-  }
-
-  // Convert spaces to CSS variables
-  @each $space-name, $value in $spaces {
-    --space-#{$space-name}: #{$value};
-  }
-
-  // Convert font sizes to CSS variables
-  @each $font-size-name, $value in $font-sizes {
-    --font-size-#{$font-size-name}: #{$value};
-  }
-
-  // Add font-family variables
-  --font-family-main: #{$font-main};
-  --font-family-heading: #{$font-heading};
-}

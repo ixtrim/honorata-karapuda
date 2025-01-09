@@ -70,8 +70,7 @@ const watch = function (cb) {
 
 // Export tasks
 exports.css = css;
-exports.cssBlocks = cssBlocks;
 exports.images = images;
 exports.svg = svg;
 exports.watch = watch;
-exports.default = gulp.series(css, cssBlocks, 'babel-theme', 'babel-blocks', images, svg, watch);
+exports.default = gulp.series(css, 'babel-theme', images, svg, watch);

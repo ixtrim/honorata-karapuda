@@ -5,6 +5,20 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  background: get-color(c-black, 'v-100');
+
+  .page-wrapper {
+    width: calc(100% - 80px);
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .page-content {
+      width: 100%;
+      position: relative;
+    }
+  }
 
   a {
     transition: all 0.3s ease-in-out;
