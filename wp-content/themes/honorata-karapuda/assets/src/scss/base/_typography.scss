@@ -1,0 +1,86 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+body {
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 27.2px;
+  color: get-color(c-black, 'v-100');
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .txt-decor {
+    font-weight: 400;
+    font-family: $font-heading;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: get-color(c-black, 'v-100');
+  }
+
+  .txt-xxxl {
+    font-size: 92px;
+    line-height: 112px;
+
+    @media (max-width: 767px) {
+      font-size: 48px;
+      line-height: 59px;
+    }
+  }
+
+  .txt-xxl {
+    font-size: 70px;
+    line-height: 78px;
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  .txt-xl {
+    font-size: 60px;
+    line-height: 67px;
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  .txt-lg {
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 1.5px;
+  }
+
+  .txt-l {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .txt-md {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .txt-sm {
+    font-size: 16px;
+    line-height: 27.2px;
+  }
+
+  .txt-xs {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  
+  p {
+    font-family: $font-main;
+    font-size: 16px;
+    line-height: 27.2px;
+    color: get-color(c-dark, 'v-100');
+  }
+}

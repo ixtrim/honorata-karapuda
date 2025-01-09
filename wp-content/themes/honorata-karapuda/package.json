@@ -1,0 +1,41 @@
+{
+  "name": "hkarapuda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch",
+    "build": "gulp"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ],
+  "keywords": [],
+  "author": "Sara Kozinska Ixtrim.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.22.5",
+    "@babel/plugin-transform-react-jsx": "^7.22.5",
+    "@babel/preset-env": "^7.22.10",
+    "@wordpress/babel-preset-default": "^7.23.0",
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-terser": "^2.1.0",
+    "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "@wordpress/element": "^5.16.0"
+  }
+}

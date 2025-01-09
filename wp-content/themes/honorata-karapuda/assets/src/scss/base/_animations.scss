@@ -1,0 +1,28 @@
+.animated-image {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.animated-text-scale {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.animated-el-fadeInUp, 
+.animated-el-fadeInLeft,
+.animated-el-fadeInRight {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+
+  &.animated-el-fadeInUp {
+    transform: translate3d(0, 50px, 0);
+  }
+
+  &.animated-el-fadeInLeft {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  &.animated-el-fadeInRight {
+    transform: translate3d(50px, 0, 0);
+  }
+}

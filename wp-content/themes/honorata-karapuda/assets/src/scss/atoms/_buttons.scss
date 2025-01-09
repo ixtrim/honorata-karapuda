@@ -1,0 +1,110 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-decoration: none;
+
+  &--outline {
+    min-width: 129px;
+    padding: 0 34.5px;
+    position: relative;
+    z-index: 0;
+    border: 1px solid get-color(c-black, 'v-100');
+    text-align: center;
+    transition: border 0.3s ease-in-out;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: get-color(c-white, 'v-100');
+      z-index: 1;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      line-height: 55px;
+      position: relative;
+      z-index: 2;
+      margin: 0;
+      padding: 0;
+      color: get-color(c-black, 'v-100');
+    }
+
+    &:hover {
+      border: 1px solid get-color(c-white, 'v-100');
+
+      &::before,
+      &::after {
+        width: 51%;
+      }
+    }
+  }
+
+  &--outline-blue {
+    min-width: 129px;
+    padding: 0 34.5px;
+    position: relative;
+    z-index: 0;
+    border: 1px solid get-color(c-black, 'v-100');
+    text-align: center;
+    transition: border 0.3s ease-in-out;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: get-color(c-blue, 'v-100');
+      z-index: 1;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      line-height: 55px;
+      position: relative;
+      z-index: 2;
+      margin: 0;
+      padding: 0;
+      color: get-color(c-black, 'v-100');
+    }
+
+    &:hover {
+      border: 1px solid get-color(c-white, 'v-100');
+
+      &::before,
+      &::after {
+        width: 51%;
+      }
+    }
+  }
+}

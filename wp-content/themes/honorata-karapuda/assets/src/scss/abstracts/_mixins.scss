@@ -1,0 +1,77 @@
+@use '../abstracts/variables' as *;
+
+// Usage: color: get-color(c-grey, 'v-900');
+@function get-color($color, $shade: 'base', $map : $colors ) {
+  
+  @if (map-has-key($map, $color)) {
+    $value: map-get($map, unquote($color));
+
+    @if type-of($value)==color {
+      @return $value;
+    }
+
+    @if (map-has-key($value, $shade)) {
+      @return map-get($value, $shade);
+    }
+  }
+  @return null;
+}
+
+// USAGE: @include calculate-width('plus', 100%, 20px, 20px);  -- For plus operation
+@mixin calculate-width($total-width, $padding-left, $padding-right, $operation: 'minus') {
+  @if $operation =='minus' {
+    width: calc(#{inspect($total-width)} - #{inspect($padding-left)} - #{inspect($padding-right)});
+  }
+
+  @else if $operation =='plus' {
+    width: calc(#{inspect($total-width)} + #{inspect($padding-left)} + #{inspect($padding-right)});
+  }
+}
+
+// USAGE: @include center($position: absolute, $vertical: true, $horizontal: true);
+@mixin center($position: relative, $vertical: false, $horizontal: false) {
+  position: $position;
+
+  // Center vertically
+  @if $vertical ==true {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  // Center horizontally
+  @if $horizontal ==true {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  // Center both ways
+  @if $vertical ==true and $horizontal ==true {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// RWD Mixin
+$breakpoints: (
+  'smallest': 390px,
+  'small': 550px,
+  'medium': 768px,
+  'large': 1024px,
+  'xlarge': 1200px,
+  'xxlarge': 1300px,
+  'xxxlarge': 1500px,
+) !default;
+
+@mixin media($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @media (max-width: $breakpoint-value) {
+      @content;
+    }
+  }
+  @else {
+    @warn "No breakpoint defined for `#{$breakpoint}` in `$breakpoints`.";
+  }
+}

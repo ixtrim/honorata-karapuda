@@ -1,0 +1,66 @@
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+.custom-gutenberg-block {
+  width: 100%;
+  border: 1px solid get-color(c-blue, 'v-200');
+  background: get-color(c-white, 'v-100');
+  padding: 25px;
+  text-align: center;
+  display: inline-block;
+  margin: 5px 0;
+  position: relative;
+
+  &-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px 30px;
+    display: block;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: get-color(c-white, 'v-100');
+      opacity: 0.95;
+      z-index: -1;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+    }
+
+    h3 {
+      margin: 0 0 15px;
+      padding: 0;
+      color: get-color(c-blue, 'v-200');
+      font-family: $font-heading;
+      font-size: 35px;
+      line-height: 45px;
+      letter-spacing: 2px;
+    }
+
+    em {
+      font-family: $font-main;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: 1px;
+      color: get-color(c-black, 'v-100');
+      background: get-color(c-yellow, 'v-100');
+      padding: 10px 10px 7px;
+      border-radius: 3px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="15.56066"
+   height="6.0606604"
+   viewBox="0 0 15.56066 6.0606604"
+   fill="none"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="swiper-prev_black.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="78.75"
+     inkscape:cx="8"
+     inkscape:cy="3.0349206"
+     inkscape:window-width="1920"
+     inkscape:window-height="957"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <g
+     id="g824"
+     transform="matrix(-1,0,0,1,15.56066,0)">
+    <path
+       d="M 0,3.0303301 H 14.5"
+       stroke="#C0E3E5"
+       stroke-width="1.5"
+       id="path2" />
+    <path
+       d="m 12,0.53033009 2.5,2.50000001 -2.5,2.5"
+       stroke="#C0E3E5"
+       stroke-width="1.5"
+       id="path4" />
+  </g>
+</svg>
