@@ -6,6 +6,7 @@ body {
   padding: 0;
   width: 100%;
   background: get-color(c-black, 'v-100');
+  overflow-x: hidden;
 
   .page-wrapper {
     width: calc(100% - 80px);

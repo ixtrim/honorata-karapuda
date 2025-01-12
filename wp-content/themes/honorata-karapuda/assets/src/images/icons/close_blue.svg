@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- xmark icon by Free Icons (https://free-icons.github.io/free-icons/) -->
+
+<svg
+   height="497.95123"
+   fill="currentColor"
+   viewBox="0 0 497.95123 497.95123"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="close_blue.svg"
+   width="497.95123"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#1820dd"
+     borderopacity="0.25"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.5273438"
+     inkscape:cx="248.79795"
+     inkscape:cy="248.79795"
+     inkscape:window-width="1920"
+     inkscape:window-height="957"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     d="m 456.58537,490.92683 q 17.17073,14.04878 34.34146,0 14.04878,-17.17073 0,-34.34146 L 284.87805,248.97561 v 0 L 490.92683,42.92683 v 0 q 14.04878,-18.731708 0,-35.9024402 -17.17073,-14.04878 -34.34146,0 L 248.97561,213.07317 v 0 L 42.92683,7.0243898 v 0 q -18.731708,-14.04878 -35.9024402,0 -14.04878,17.1707322 0,35.9024402 L 213.07317,248.97561 v 0 L 7.0243898,456.58537 v 0 q -14.04878,17.17073 0,34.34146 17.1707322,14.04878 35.9024402,0 L 248.97561,284.87805 v 0 z"
+     fill="#1820dd" />
+</svg>

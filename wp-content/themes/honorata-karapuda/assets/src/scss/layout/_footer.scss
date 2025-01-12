@@ -1,4 +1,37 @@
 .page-footer {
   width: 100%;
   text-align: left;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.blob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background:black url('../images/design/blob.svg') no-repeat center center;
+  background-size: 100% 100%;
+  transition: all 450ms ease-out;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-75% + 15px), -100%);
+  z-index: 0;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    background: url('../images/design/blob.svg') no-repeat center center;
+    background-size: 100% 100%;
+
+  }
 }

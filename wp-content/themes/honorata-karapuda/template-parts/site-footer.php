@@ -5,3 +5,5 @@
 
   </div>
 </footer>
+
+<div class="blob"></div>

@@ -22,7 +22,7 @@ function hkarapuda_theme()
   */
   add_image_size('avatar', 100, 100, true);
   add_image_size('full-width', 767, 0, false);
-  add_image_size('gallery-thumb', 350, 0, false);
+  add_image_size('gallery-thumb', 500, 0, false);
 }
 
 add_action('after_setup_theme', 'hkarapuda_theme');
